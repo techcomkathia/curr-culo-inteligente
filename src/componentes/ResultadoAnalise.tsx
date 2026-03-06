@@ -149,7 +149,11 @@ const ResultadoAnalise = ({ resultado }: PropriedadesResultado) => {
           </button>
           <button type="button" className="botao-secundario" onClick={baixarCurriculoPDF}>
             <Download className="h-4 w-4" />
-            Baixar currículo em PDF
+            Baixar em PDF
+          </button>
+          <button type="button" className="botao-secundario" onClick={baixarCurriculoDoc}>
+            <FileText className="h-4 w-4" />
+            Baixar em DOC (editável)
           </button>
         </div>
       </div>

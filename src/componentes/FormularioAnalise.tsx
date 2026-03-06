@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { Send, Loader2, Briefcase, User, Code, GraduationCap, Globe, FolderOpen, Download, Upload } from "lucide-react";
 import { DadosAnalise, InformacoesContato } from "@/servicos/servicoApi";
 import { toast } from "sonner";
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible";
 
 interface DadosPerfil {
   informacoesContato: InformacoesContato;

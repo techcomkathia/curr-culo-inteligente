@@ -2,6 +2,7 @@ import { CheckCircle, XCircle, Lightbulb, FileText, Copy, Download } from "lucid
 import { ResultadoAnaliseDTO } from "@/servicos/servicoApi";
 import { toast } from "sonner";
 import { useMemo } from "react";
+import html2pdf from "html2pdf.js";
 
 interface PropriedadesResultado {
   resultado: ResultadoAnaliseDTO;

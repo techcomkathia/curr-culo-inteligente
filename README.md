@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
 
-## Project info
+# ATS Resume Optimizer
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🚀 Otimize seu currículo para vagas tech com inteligência artificial e aumente suas chances em processos seletivos!
 
-## How can I edit this code?
+## ✨ Visão Geral
 
-There are several ways of editing your application.
+O ATS Resume Optimizer é uma aplicação web que compara seu currículo com a descrição de uma vaga, gera um score de compatibilidade (ATS Score) e sugere melhorias automáticas usando IA (Google Gemini). O sistema também gera um currículo otimizado, pronto para ser enviado ao recrutador.
 
-**Use Lovable**
+## 🛠️ Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Radix UI
+- Google Gemini API (IA generativa)
+- Vercel Serverless Functions
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Funcionalidades
 
-**Use your preferred IDE**
+- Formulário completo para preenchimento de currículo
+- Importação/exportação de perfil em JSON
+- Análise automática de compatibilidade com a vaga (ATS Score)
+- Sugestões de melhorias personalizadas
+- Geração de currículo otimizado com IA
+- Download do currículo em PDF e DOC
+- Interface responsiva, acessível e moderna
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 💡 Como funciona?
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Preencha seu currículo e cole a descrição da vaga.
+2. O sistema compara as informações e gera:
+	 - Pontuação ATS
+	 - Habilidades identificadas e faltantes
+	 - Sugestões de melhoria
+	 - Currículo otimizado
+3. Baixe ou copie o currículo pronto para enviar!
 
-Follow these steps:
+## 🖼️ Demonstração
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<!-- Adicione um GIF ou print da interface aqui -->
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Deploy
 
-# Step 3: Install the necessary dependencies.
-npm i
+O projeto está pronto para deploy na Vercel. Basta clonar, configurar as variáveis de ambiente e publicar!
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 📦 Como rodar localmente
+
+```bash
+npm install
+# Configure o .env com sua chave Gemini e dados do projeto
+cp .envmodel .env # Edite o arquivo .env com suas chaves
+npx vercel dev
+# Em outro terminal
 npm run dev
+# Acesse http://localhost:8080
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+## 🔑 Configuração de APIs e Ambiente
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- É necessário obter uma chave da API Google Gemini.
+- Preencha o arquivo `.env` com as seguintes variáveis (veja o modelo em `.envmodel`):
+	- `GEMINI_API_KEY=...`
+	- `NOME_CHAVE=...`
+	- `NOME_PROJETO=...`
+	- `NUMERO_PROJETO=...`
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📄 Licença
+Este projeto é open source e está sob a licença MIT.

@@ -44,7 +44,7 @@ O ATS Resume Optimizer é uma aplicação web que compara seu currículo com a d
 
 O ATS Resume Optimizer permite que você preencha seu currículo, importe dados de experiências anteriores via JSON, analise sua compatibilidade com vagas específicas e exporte o resultado em diferentes formatos. A interface é intuitiva e responsiva, facilitando o uso tanto em desktop quanto em dispositivos móveis. O sistema utiliza inteligência artificial para comparar seu perfil com a vaga desejada, sugerindo melhorias e gerando um currículo otimizado, pronto para ser enviado aos recrutadores.
 
-https://otimizador-curriculos.vercel.app/
+
 
 Você pode:
 - Preencher ou importar seu perfil;
@@ -75,8 +75,10 @@ Você pode:
 ---
 
 ## 🚀 Deploy
+O projeto está disponível online! Acesse:
+👉 [otimizador-curriculos.vercel.app](https://otimizador-curriculos.vercel.app/)
 
-O projeto está pronto para deploy na Vercel. Basta clonar, configurar as variáveis de ambiente e publicar!
+Quer melhorar o projeto? Este repositório já está configurado para deploy na Vercel. Basta clonar, configurar as variáveis de ambiente e publicar a sua própria versão.
 
 ## 📦 Como rodar localmente
 

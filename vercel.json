@@ -1,15 +1,11 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/analisar.ts",
-      "use": "@vercel/node"
-    }
+    { "src": "dist/**", "use": "@vercel/static" },
+    { "src": "api/analisar.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/api/analisar",
-      "dest": "api/analisar.ts"
-    }
+    { "src": "/api/analisar", "dest": "api/analisar.ts" },
+    { "src": "/(.*)", "dest": "/dist/index.html" }
   ]
 }

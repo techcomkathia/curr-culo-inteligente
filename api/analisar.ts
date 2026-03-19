@@ -2,16 +2,16 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Carrega a chave da API Gemini da variável de ambiente
-const CHAVE_API_GEMINI = process.env.GEMINI_API_KEY;
-
-if (!CHAVE_API_GEMINI) {
-  throw new Error('GEMINI_API_KEY não definida nas variáveis de ambiente.');
-}
-
-const geminiIA = new GoogleGenerativeAI(CHAVE_API_GEMINI);
 
 export default async function analisarCurriculo(req: VercelRequest, res: VercelResponse) {
+  // Carrega a chave da API Gemini da variável de ambiente
+  const CHAVE_API_GEMINI = process.env.GEMINI_API_KEY;
+  if (!CHAVE_API_GEMINI) {
+    return res.status(500).json({ erro: 'GEMINI_API_KEY não definida nas variáveis de ambiente.' });
+  }
+  const geminiIA = new GoogleGenerativeAI(CHAVE_API_GEMINI);
+
+
   if (req.method !== 'POST') {
     return res.status(405).json({ erro: 'Método não permitido' });
   }
